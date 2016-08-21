@@ -79,7 +79,6 @@ Some more useful tmux commands (see also this [video](https://www.youtube.com/wa
 |`control + -b` | split-horizontally : split window horizontally |
 |`tmux - new s <sessionname>` | create a new tmux session |
 |`control + -x`  | close (kill) tmux pane|
-
 |`control + -b d` | detach from tmux session. (without stopping the process) |
 | `tmux list-sessions` | List all tmux sessions|
 |`tmux attach -t <sessionname>` | attach to a certain tmux session|
