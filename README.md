@@ -43,6 +43,18 @@ For more information, see
 * termine which processid your process has.
 * enter `kill -9 <processid>`
 
+### Virtual environments
+Change virtual environment: 
+
+```bash
+workon <name of virtual environment>
+workon annerose2015-11  # python 2 environment
+workon annerose_python3_2016-07 # python 3 environment
+```
+
+How to set up and manage virtual environments in Ubuntu: [http://askubuntu.com/questions/244641/how-to-set-up-and-use-a-virtual-python-environment-in-ubuntu](http://askubuntu.com/questions/244641/how-to-set-up-and-use-a-virtual-python-environment-in-ubuntu)
+
+
 ***
 ## R
 * Open new RStudio window from terminal (e.g. when one RStudio needs to run for an extended period of time):
