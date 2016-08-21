@@ -10,8 +10,8 @@ The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://
   - [Cronjobs and Crontab](#cronjobs-and-crontab)
   - [Virtual environments](#virtual-environments)
   - [Tmux sessions](#tmux-sessions)
- - [Python]
- - [R]
+ - [Python](#python)
+ - [R](#r)
  - [Text editing and LaTeX](Text-editing-and-LaTeX)
   -[Calculate the number of words in a Latex file](Calculate-the-number-of-words-in-a-Latex-file)
 
@@ -42,6 +42,12 @@ For more information, see
 * enter `ps -e` in the terminal to see all existing processes.
 * termine which processid your process has.
 * enter `kill -9 <processid>`
+
+***
+## R
+* Open new RStudio window from terminal (e.g. when one RStudio needs to run for an extended period of time):
+ * enter `open -n -a "rstudio"` in terminal
+* How to add an RStudio project to Github: [https://www.r-bloggers.com/rstudio-and-github/](https://www.r-bloggers.com/rstudio-and-github/)
 
 ***
 ## Text editing and LaTeX
