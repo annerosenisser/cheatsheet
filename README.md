@@ -1,7 +1,7 @@
 # Bash Cheat Sheet 
 Most important bash commands. 
 
-The set-up of this cheat sheet is inspired by an existing [Git and Github cheat sheet](https://github.com/tiimgreen/github-cheat-sheet) by [Tim Green](https://github.com/tiimgreen).
+The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://github.com/tiimgreen/github-cheat-sheet) by [Tim Green](https://github.com/tiimgreen).
 
 
 ## Table of Contents
