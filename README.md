@@ -12,8 +12,8 @@ The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://
   - [Tmux sessions](#tmux-sessions)
  - [Python](#python)
  - [R](#r)
- - [Text editing and LaTeX](text-editing-and-latex)
-  - [Calculate the number of words in a Latex file](calculate-the-number-of-words-in-a-latex-file)
+ - [Text editing and LaTeX](#text-editing-and-latex)
+  - [Calculate the number of words in a Latex file](#calculate-the-number-of-words-in-a-latex-file)
 
 ***
 ## Managing processes
