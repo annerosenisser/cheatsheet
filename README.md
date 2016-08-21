@@ -6,14 +6,14 @@ The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://
 
 ## Table of Contents
  - [Managing processes](#managing-processes)
-  - [First-aid procedure for killing a running process](#First-aid-procedure-for-killing-a-running-process)
+  - [First-aid procedure for killing a running process](#first-aid-procedure-for-killing-a-running-process)
   - [Cronjobs and Crontab](#cronjobs-and-crontab)
   - [Virtual environments](#virtual-environments)
   - [Tmux sessions](#tmux-sessions)
  - [Python](#python)
  - [R](#r)
- - [Text editing and LaTeX](Text-editing-and-LaTeX)
-  -[Calculate the number of words in a Latex file](Calculate-the-number-of-words-in-a-Latex-file)
+ - [Text editing and LaTeX](text-editing-and-latex)
+  - [Calculate the number of words in a Latex file](calculate-the-number-of-words-in-a-latex-file)
 
 ***
 ## Managing processes
