@@ -3,7 +3,7 @@ Most important bash commands for researchers and data scientists.
 
 The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://github.com/tiimgreen/github-cheat-sheet) by [Tim Green](https://github.com/tiimgreen).
 
-
+***
 ## Table of Contents
  - [Managing processes](#managing-processes)
   - [First-aid procedure for killing a running process](#first-aid-procedure-for-killing-a-running-process)
@@ -68,21 +68,22 @@ If you want to have multiple session running side-by-side you should name each s
 
 Some more useful tmux commands (see also this [video](https://www.youtube.com/watch?v=BHhA_ZKjyxo)):
 
-* control + -b <command> to tell the shell that it’s for tmux and not just normal shell. 
+| Command        | Significance          |
+| ------------- |:-------------:| 
+| `control + -b <command>`      | to tell the shell that it’s for tmux and not just normal shell. | 
+| `control + -b  p`    | previous window      | 
+| `control + -b  n` | next window |
+|`control + -b  c` | create window |
+|`control + -b  w` | list windows |
+|`control + -b %` |split window vertically into two parts |
+|`control + -b` | split-horizontally : split window horizontally |
+|`tmux - new s <sessionname>` | create a new tmux session |
+|`control + -x`  | close (kill) tmux pane|
 
-* `control + -b  p` : previous window
-* `control + -b  n` : next window
-* `control + -b  c` : create window
-* `control + -b  w` : list windows
-* `control + -b %` : split window vertically into two parts
-* `control + -b` : split-horizontally : split window horizontally
-* `tmux - new s <sessionname>` : create a new tmux session
-* `control + -x`  : close (kill) tmux pane
-
-* `control + -b d` : detach from tmux session. (without stopping the process). 
-* `tmux list-sessions` : List all tmux sessions. 
-* `tmux attach -t <sessionname>` : attach to a certain tmux session
-* `tmux attach` : attach all tmux sessions/ any tmux session
+|`control + -b d` | detach from tmux session. (without stopping the process) |
+| `tmux list-sessions` | List all tmux sessions|
+|`tmux attach -t <sessionname>` | attach to a certain tmux session|
+|`tmux attach` |attach all tmux sessions/ any tmux session |
 
 
 ***
