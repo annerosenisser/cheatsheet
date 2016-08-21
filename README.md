@@ -8,18 +8,22 @@ The set-up of this cheat sheet is inspired by an existing [Git and Github cheat 
  - [Section](#github)
   - [Subsection](#ignore-whitespace)
 
-## GitHub
-### Ignore Whitespace
-Adding `?w=1` to any diff URL will remove any changes only in whitespace, enabling you to see only that code that has changed.
+## Cronjobs and Crontab
+### Schedule crontab task
+* If you want to run the cronjob on a server: enter the server
+* enter `crontab -e` in the terminal
+* enter `<minutes> <hours> <day of month> <month> <day of week>`
+ * for example `6 0 * * 1-6 cd /home/annerose/Python/continuousscraper/ && python processcontrol.py new`
+ * this signifies that the process will start to run Monday through Saturday at 6 minutes past midnight.
 
+For more information, see 
+* [http://www.everydaylinuxuser.com/2014/10/an-everyday-linux-user-guide-to.html](http://www.everydaylinuxuser.com/2014/10/an-everyday-linux-user-guide-to.html) and 
+* [http://stackoverflow.com/questions/12409101/scrapy-crawl-on-crontab-under-virtual-environment](http://stackoverflow.com/questions/12409101/scrapy-crawl-on-crontab-under-virtual-environment)
 
-```
-Some code
-```
-
-```bash
-$ git clone https://github.com/tiimgreen/github-cheat-sheet
-```
+### Kill an existing cronjob
+* enter `ps -e` in the terminal to see all existing processes.
+* termine which processid your process has.
+* enter `kill -9 <processid>`
 
 
 ### Useful Articles
