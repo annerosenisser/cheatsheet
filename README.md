@@ -25,8 +25,16 @@ For more information, see
 * termine which processid your process has.
 * enter `kill -9 <processid>`
 
+## First-Aid Procedure for Killing a Running Process
+* open new terminal window
+* type `ps + enter`
+* identify PID (processid) of the process
+* type `kill -9 <PID>`
 
-### Useful Articles
-| Title | Link |
-| ----- | ---- |
-| GitHub Flow  | http://scottchacon.com/2011/08/31/github-flow.html |
+OR:
+* `control + C` (twice if needed)
+
+## Calculate the number of words in a Latex TeX file
+* change the working directory of your terminal to where the LaTeX TeX file is located.
+* enter `detex <document_name>.tex | wc -w -c -l` or just `detex <document_name>.tex | wc`
+* to calculate word count in pdf document: `pdftotext <document_name>.pdf - | wc -w`
