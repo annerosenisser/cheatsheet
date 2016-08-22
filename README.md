@@ -77,7 +77,7 @@ Some more useful tmux commands (see also this [video](https://www.youtube.com/wa
 |`tmux attach` |attach all tmux sessions/ any tmux session |
 
 ### Git
-## Commit file from terminal
+#### Commit file from terminal
 * go the working directory of your repository inside the terminal
 * type `git add .` . This recurses into sub-directories. Alternative: `git add` or `git commit -a`
 * `git commit -m “your commit message”`. Commit the changes.
