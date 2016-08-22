@@ -17,6 +17,7 @@ The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://
 	- [Check which python packages are installed](#check-which-python-packages-are-installed)
 	- [Start scrapy project](#start-scrapy-project)
  - [R](#r)
+ - [SQL and SQLite](#sql-and-sqlite)
  - [Text editing and LaTeX](#text-editing-and-latex)
   - [Calculate the number of words in a Latex file](#calculate-the-number-of-words-in-a-latex-file)
 
@@ -180,6 +181,27 @@ git config remote.origin.url git@github.com:ewenharrison/test.git
 git pull -u origin master  
 git push -u origin master  
 ```
+
+****************************************************
+****************************************************
+## SQL and SQLite
+
+****************************************************
+### Repair corrupt database
+How to repair db database: see 
+[stackoverflow](http://stackoverflow.com/questions/5274202/sqlite3-database-or-disk-is-full-the-database-disk-image-is-malformed)
+
+```bash  
+echo '.dump'|sqlite3 corrupt.db|sqlite3 corrupt_fixed.db  
+cat <( sqlite3 corrupt.db .dump | grep "^ROLLBACK" -v ) <( echo "COMMIT;" ) | sqlite3 corrupt_fixed.db
+```
+
+****************************************************
+### Merge two SQLite databases
+[](http://stackoverflow.com/questions/3689694/merge-sqlite-files-into-one-db-file-and-begin-commit-question)  
+[](http://stackoverflow.com/questions/80801/how-can-i-merge-many-sqlite-databases)  
+Leaving out duplicates:
+[](http://sqlite.1065341.n5.nabble.com/Merging-two-SQLites-leaving-out-duplicates-td46337.html)
 
 
 ****************************************************
