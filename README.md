@@ -165,6 +165,14 @@ pip freeze
  * enter `open -n -a "rstudio"` in terminal
 * How to add an RStudio project to Github: [https://www.r-bloggers.com/rstudio-and-github/](https://www.r-bloggers.com/rstudio-and-github/)
 
+Add the following commands in shell after having created the project in Github:
+```bash
+git remote add origin https://github.com/ewenharrison/test.git  
+git config remote.origin.url git@github.com:ewenharrison/test.git  
+git pull -u origin master  
+git push -u origin master  
+```
+
 
 ****************************************************
 ****************************************************
