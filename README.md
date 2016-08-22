@@ -8,9 +8,10 @@ The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://
  - [Managing processes](#managing-processes)
   - [First-aid procedure for killing a running process](#first-aid-procedure-for-killing-a-running-process)
   - [Cronjobs and Crontab](#cronjobs-and-crontab)
-  - [Virtual environments](#virtual-environments)
   - [Tmux sessions](#tmux-sessions)
  - [Python](#python)
+ 	- [Virtual environments](#virtual-environments)
+	- [Check which python packages are installed](#check-which-python-packages-are-installed)
  - [R](#r)
  - [Text editing and LaTeX](#text-editing-and-latex)
   - [Calculate the number of words in a Latex file](#calculate-the-number-of-words-in-a-latex-file)
@@ -43,16 +44,6 @@ For more information, see
 * termine which processid your process has.
 * enter `kill -9 <processid>`
 
-### Virtual environments
-Change virtual environment: 
-
-```bash
-workon <name of virtual environment>
-workon annerose2015-11  # python 2 environment
-workon annerose_python3_2016-07 # python 3 environment
-```
-
-How to set up and manage virtual environments in Ubuntu:   [http://askubuntu.com/questions/244641/how-to-set-up-and-use-a-virtual-python-environment-in-ubuntu](http://askubuntu.com/questions/244641/how-to-set-up-and-use-a-virtual-python-environment-in-ubuntu)
 
 ### Tmux sessions
 Tmux allows to keep processes running after ending an ssh session. For more detailed explanation, see [here](http://askubuntu.com/questions/8653/how-to-keep-processes-running-after-ending-ssh-session).
@@ -69,8 +60,8 @@ If you want to have multiple session running side-by-side you should name each s
 Some more useful tmux commands (see also this [video](https://www.youtube.com/watch?v=BHhA_ZKjyxo)):
 
 | Command        | Significance          |
-| ------------- |:-------------:| 
-| `control + -b <command>`      | to tell the shell that it’s for tmux and not just normal shell. | 
+| ------------- |-------------| 
+| `control + -b <command>`      | to tell the shell that it's for tmux and not just normal shell. | 
 | `control + -b  p`    | previous window      | 
 | `control + -b  n` | next window |
 |`control + -b  c` | create window |
@@ -83,6 +74,26 @@ Some more useful tmux commands (see also this [video](https://www.youtube.com/wa
 | `tmux list-sessions` | List all tmux sessions|
 |`tmux attach -t <sessionname>` | attach to a certain tmux session|
 |`tmux attach` |attach all tmux sessions/ any tmux session |
+
+***
+## Python
+
+### Virtual environments
+Change virtual environment: 
+
+```bash
+workon <name of virtual environment>
+workon annerose2015-11  # python 2 environment
+workon annerose_python3_2016-07 # python 3 environment
+```
+
+How to set up and manage virtual environments in Ubuntu:   [http://askubuntu.com/questions/244641/how-to-set-up-and-use-a-virtual-python-environment-in-ubuntu](http://askubuntu.com/questions/244641/how-to-set-up-and-use-a-virtual-python-environment-in-ubuntu)
+
+### Check which python packages are installed
+
+```bash
+pip freeze
+```
 
 
 ***
