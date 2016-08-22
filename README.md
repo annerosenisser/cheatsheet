@@ -160,7 +160,8 @@ pip freeze
 
 ****************************************************
 ### Start scrapy project
-Start [scrapy](http://scrapy.org) project for webscraping: 
+Start [scrapy](http://scrapy.org) project for webscraping: enter the following command
+in the terminal (in the directory where you want to start your project).
 
 `scrapy startproject name_of_project`
 
