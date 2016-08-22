@@ -22,6 +22,8 @@ The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://
 ****************************************************
 ****************************************************
 ## Managing processes
+
+****************************************************
 ### First-aid procedure for killing a running process
 * open new terminal window
 * type `ps + enter`
@@ -34,6 +36,7 @@ OR:
 
 ****************************************************
 ### Cronjobs and Crontab
+
 #### Schedule crontab task
 * If you want to run the cronjob on a server: enter the server
 * enter `crontab -e` in the terminal
@@ -124,7 +127,9 @@ The file is found locally in the working environment of the project. Open it in 
 ****************************************************
 ## Python
 
+****************************************************
 ### Virtual environments
+
 #### Change virtual environment: 
 
 ```bash
@@ -145,6 +150,7 @@ Then set the shell Preferences->Tools->Terminal->Shell path to
 `/bin/bash --rcfile ~/.pycharmrc`
 
 
+****************************************************
 ### Check which python packages are installed
 
 ```bash
@@ -153,13 +159,18 @@ pip freeze
 
 
 ****************************************************
+****************************************************
 ## R
 * Open new RStudio window from terminal (e.g. when one RStudio needs to run for an extended period of time):
  * enter `open -n -a "rstudio"` in terminal
 * How to add an RStudio project to Github: [https://www.r-bloggers.com/rstudio-and-github/](https://www.r-bloggers.com/rstudio-and-github/)
 
+
+****************************************************
 ****************************************************
 ## Text editing and LaTeX
+
+****************************************************
 ### Calculate the number of words in a Latex file
 * change the working directory of your terminal to where the LaTeX TeX file is located.
 * enter `detex <document_name>.tex | wc -w -c -l` or just `detex <document_name>.tex | wc`
