@@ -198,10 +198,11 @@ cat <( sqlite3 corrupt.db .dump | grep "^ROLLBACK" -v ) <( echo "COMMIT;" ) | sq
 
 ****************************************************
 ### Merge two SQLite databases
-[](http://stackoverflow.com/questions/3689694/merge-sqlite-files-into-one-db-file-and-begin-commit-question)  
-[](http://stackoverflow.com/questions/80801/how-can-i-merge-many-sqlite-databases)  
+[http://stackoverflow.com/questions/3689694/merge-sqlite-files-into-one-db-file-and-begin-commit-question]  
+[http://stackoverflow.com/questions/80801/how-can-i-merge-many-sqlite-databases]    
 Leaving out duplicates:
-[](http://sqlite.1065341.n5.nabble.com/Merging-two-SQLites-leaving-out-duplicates-td46337.html)
+[http://sqlite.1065341.n5.nabble.com/Merging-two-SQLites-leaving-out-duplicates-td46337.html]
+
 
 
 ****************************************************
