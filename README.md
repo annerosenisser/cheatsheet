@@ -3,7 +3,7 @@ Most important bash commands for researchers and data scientists.
 
 The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://github.com/tiimgreen/github-cheat-sheet) by [Tim Green](https://github.com/tiimgreen).
 
-***
+****************************************************
 ## Table of Contents
  - [Managing processes](#managing-processes)
   - [First-aid procedure for killing a running process](#first-aid-procedure-for-killing-a-running-process)
@@ -18,7 +18,7 @@ The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://
  - [Text editing and LaTeX](#text-editing-and-latex)
   - [Calculate the number of words in a Latex file](#calculate-the-number-of-words-in-a-latex-file)
 
-***
+****************************************************
 ## Managing processes
 ### First-aid procedure for killing a running process
 * open new terminal window
@@ -98,16 +98,24 @@ To see the status of your repository: `git status`.
 
 See [this](http://shaun.boyblack.co.za/blog/2009/03/14/getting-started-with-git-on-mac-os-x/) useful blog.
 
-#### .gitignore
-See [here](See http://stackoverflow.com/questions/7335420/global-git-ignore)
+#### global .gitignore file
+See [here](http://stackoverflow.com/questions/7335420/global-git-ignore)
 
 Create a global .gitignore file (file types to be excluded from every git project):  
 `git config --global core.excludesfile ~/.gitignore_global`
 
-The file is found under Documents/<User> (as a hidden file). Open it in a text editor to edit it and add files you don’t want to
+The file is found under Documents/Username (as a hidden file). Open it in a text editor to edit it and add files you don’t want to
 sync with git/GitHub.
 
-***
+#### local .gitignore file
+enter  
+`touch .gitignore`  
+in the terminal under the working environment of the project you want to commit to github. 
+
+The file is found locally in the working environment of the project. Open it in a text editor to edit it and add files.
+
+
+****************************************************
 ## Python
 
 ### Virtual environments
@@ -138,13 +146,13 @@ pip freeze
 ```
 
 
-***
+****************************************************
 ## R
 * Open new RStudio window from terminal (e.g. when one RStudio needs to run for an extended period of time):
  * enter `open -n -a "rstudio"` in terminal
 * How to add an RStudio project to Github: [https://www.r-bloggers.com/rstudio-and-github/](https://www.r-bloggers.com/rstudio-and-github/)
 
-***
+****************************************************
 ## Text editing and LaTeX
 ### Calculate the number of words in a Latex file
 * change the working directory of your terminal to where the LaTeX TeX file is located.
