@@ -15,6 +15,7 @@ The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://
  - [Python](#python)
  	- [Virtual environments](#virtual-environments)
 	- [Check which python packages are installed](#check-which-python-packages-are-installed)
+	- [Start scrapy project](#start-scrapy-project)
  - [R](#r)
  - [Text editing and LaTeX](#text-editing-and-latex)
   - [Calculate the number of words in a Latex file](#calculate-the-number-of-words-in-a-latex-file)
@@ -156,6 +157,12 @@ Then set the shell Preferences->Tools->Terminal->Shell path to
 ```bash
 pip freeze
 ```
+
+****************************************************
+### Start scrapy project
+Start [scrapy](http://scrapy.org) project for webscraping: 
+
+`scrapy startproject name_of_project`
 
 
 ****************************************************
