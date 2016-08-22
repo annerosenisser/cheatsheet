@@ -9,6 +9,7 @@ The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://
   - [First-aid procedure for killing a running process](#first-aid-procedure-for-killing-a-running-process)
   - [Cronjobs and Crontab](#cronjobs-and-crontab)
   - [Tmux sessions](#tmux-sessions)
+  - [Bash profiles](#bash-profiles)
   - [Git](#git)
  - [Python](#python)
  	- [Virtual environments](#virtual-environments)
@@ -76,6 +77,16 @@ Some more useful tmux commands (see also this [video](https://www.youtube.com/wa
 |`tmux attach -t <sessionname>` | attach to a certain tmux session|
 |`tmux attach` |attach all tmux sessions/ any tmux session |
 
+### Bash profiles
+#### Create bash profile
+`touch ~/.bash_profile; open ~/.bash_profile`
+
+`touch` creates the file, so no need to run this command when the file already exists.  
+`open ~/.bashrc` is also possible.
+
+For editing the .bash_profile. opens in a text editor. See [here](http://stackoverflow.com/questions/30461201/how-do-i-edit-path-bash-profile-on-osx)
+
+
 ### Git
 #### Commit file from terminal
 * go the working directory of your repository inside the terminal
@@ -87,11 +98,20 @@ To see the status of your repository: `git status`.
 
 See [this](http://shaun.boyblack.co.za/blog/2009/03/14/getting-started-with-git-on-mac-os-x/) useful blog.
 
+#### .gitignore
+See [here](See http://stackoverflow.com/questions/7335420/global-git-ignore)
+
+Create a global .gitignore file (file types to be excluded from every git project):  
+`git config --global core.excludesfile ~/.gitignore_global`
+
+The file is found under Documents/<User> (as a hidden file). Open it in a text editor to edit it and add files you don’t want to
+sync with git/GitHub.
+
 ***
 ## Python
 
 ### Virtual environments
-Change virtual environment: 
+#### Change virtual environment: 
 
 ```bash
 workon <name of virtual environment>
@@ -100,6 +120,16 @@ workon annerose_python3_2016-07 # python 3 environment
 ```
 
 How to set up and manage virtual environments in Ubuntu:   [http://askubuntu.com/questions/244641/how-to-set-up-and-use-a-virtual-python-environment-in-ubuntu](http://askubuntu.com/questions/244641/how-to-set-up-and-use-a-virtual-python-environment-in-ubuntu)
+
+
+#### Configure Pycharm to use a virtual environment
+
+`touch ~/.pycharmrc; open ~/.pycharmrc`  
+See [here](see http://stackoverflow.com/questions/22288569/how-do-i-activate-a-virtualenv-inside-pycharms-terminal).
+
+Then set the shell Preferences->Tools->Terminal->Shell path to  
+`/bin/bash --rcfile ~/.pycharmrc`
+
 
 ### Check which python packages are installed
 
