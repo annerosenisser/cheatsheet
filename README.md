@@ -99,8 +99,14 @@ For editing the .bash_profile. opens in a text editor. See [here](http://stackov
 
 ****************************************************
 ### Git
+#### Clone repository from GitHub to local machine
+* create new repository on GitHub
+* go to the directory on your local machine where the cloned repository should be saved.
+* type `git clone https://github.com/your-name/repository-name.git`
+* the repository should no appear in the local folder on your machine.
+
 #### Commit file from terminal
-* go the working directory of your repository inside the terminal
+* go to the directory of your repository inside the terminal
 * type `git add .` . This recurses into sub-directories. Alternative: `git add` or `git commit -a`
 * `git commit -m “your commit message”`. Commit the changes.
 * `git push`. Push the changes.
@@ -176,8 +182,8 @@ in the terminal (in the directory where you want to start your project).
 
 Add the following commands in shell after having created the project in Github:
 ```bash
-git remote add origin https://github.com/ewenharrison/test.git  
-git config remote.origin.url git@github.com:ewenharrison/test.git  
+git remote add origin https://github.com/your-name/repository-name.git  
+git config remote.origin.url git@github.com:your-name/repository-name.git  
 git pull -u origin master  
 git push -u origin master  
 ```
