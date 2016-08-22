@@ -1,8 +1,9 @@
 # Bash Cheat Sheet 
 Most important bash commands for researchers and data scientists. 
 
-The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://github.com/tiimgreen/github-cheat-sheet) by [Tim Green](https://github.com/tiimgreen).
+The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://github.com/tiimgreen/github-cheat-sheet) initated by [Tim Green](https://github.com/tiimgreen).
 
+****************************************************
 ****************************************************
 ## Table of Contents
  - [Managing processes](#managing-processes)
@@ -19,6 +20,7 @@ The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://
   - [Calculate the number of words in a Latex file](#calculate-the-number-of-words-in-a-latex-file)
 
 ****************************************************
+****************************************************
 ## Managing processes
 ### First-aid procedure for killing a running process
 * open new terminal window
@@ -29,6 +31,8 @@ The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://
 OR:
 * `control + C` (twice if needed)
 
+
+****************************************************
 ### Cronjobs and Crontab
 #### Schedule crontab task
 * If you want to run the cronjob on a server: enter the server
@@ -47,6 +51,7 @@ For more information, see
 * enter `kill -9 <processid>`
 
 
+****************************************************
 ### Tmux sessions
 Tmux allows to keep processes running after ending an ssh session. For more detailed explanation, see [here](http://askubuntu.com/questions/8653/how-to-keep-processes-running-after-ending-ssh-session).
 
@@ -77,6 +82,7 @@ Some more useful tmux commands (see also this [video](https://www.youtube.com/wa
 |`tmux attach -t <sessionname>` | attach to a certain tmux session|
 |`tmux attach` |attach all tmux sessions/ any tmux session |
 
+****************************************************
 ### Bash profiles
 #### Create bash profile
 `touch ~/.bash_profile; open ~/.bash_profile`
@@ -86,7 +92,7 @@ Some more useful tmux commands (see also this [video](https://www.youtube.com/wa
 
 For editing the .bash_profile. opens in a text editor. See [here](http://stackoverflow.com/questions/30461201/how-do-i-edit-path-bash-profile-on-osx)
 
-
+****************************************************
 ### Git
 #### Commit file from terminal
 * go the working directory of your repository inside the terminal
@@ -114,7 +120,7 @@ in the terminal under the working environment of the project you want to commit 
 
 The file is found locally in the working environment of the project. Open it in a text editor to edit it and add files.
 
-
+****************************************************
 ****************************************************
 ## Python
 
