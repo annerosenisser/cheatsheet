@@ -9,6 +9,7 @@ The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://
   - [First-aid procedure for killing a running process](#first-aid-procedure-for-killing-a-running-process)
   - [Cronjobs and Crontab](#cronjobs-and-crontab)
   - [Tmux sessions](#tmux-sessions)
+  - [Git](#git)
  - [Python](#python)
  	- [Virtual environments](#virtual-environments)
 	- [Check which python packages are installed](#check-which-python-packages-are-installed)
@@ -74,6 +75,17 @@ Some more useful tmux commands (see also this [video](https://www.youtube.com/wa
 | `tmux list-sessions` | List all tmux sessions|
 |`tmux attach -t <sessionname>` | attach to a certain tmux session|
 |`tmux attach` |attach all tmux sessions/ any tmux session |
+
+### Git
+## Commit file from terminal
+* go the working directory of your repository inside the terminal
+* type `git add .` . This recurses into sub-directories. Alternative: `git add` or `git commit -a`
+* `git commit -m “your commit message”`. Commit the changes.
+* `git push`. Push the changes.
+
+To see the status of your repository: `git status`.
+
+See [this](http://shaun.boyblack.co.za/blog/2009/03/14/getting-started-with-git-on-mac-os-x/) useful blog.
 
 ***
 ## Python
