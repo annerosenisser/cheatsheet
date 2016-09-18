@@ -195,6 +195,8 @@ render("yourfile.Rmd")
 
 [This](http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html) resource on R Markdown is helpful.
 
+An R Markdown cheatsheet is available from RStudio [here](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf).
+
 ****************************************************
 ****************************************************
 ## SQL and SQLite
