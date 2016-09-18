@@ -193,7 +193,7 @@ git push -u origin master
 render("yourfile.Rmd")
 ```
 
-[This](http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html) resource is helpful.
+[This](http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html) resource on R Markdown is helpful.
 
 ****************************************************
 ****************************************************
