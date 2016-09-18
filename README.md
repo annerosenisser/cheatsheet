@@ -188,6 +188,13 @@ git pull -u origin master
 git push -u origin master  
 ```
 
+* Render/compile an R Markdown file from Terminal:  
+```r
+render("yourfile.Rmd")
+```
+
+[This](http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html) resource is helpful.
+
 ****************************************************
 ****************************************************
 ## SQL and SQLite
