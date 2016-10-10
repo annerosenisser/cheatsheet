@@ -235,7 +235,7 @@ cd ../../..		# go three levels up
 cd Applications		# go to Applications
 ```
 
-Therefore, type the command to open a new SQLiteBrowser window:
+Thereafter, type the command to open a new SQLiteBrowser window:
 ```bash
 open -n sqlitebrowser.app
 ````
