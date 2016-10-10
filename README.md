@@ -18,6 +18,9 @@ The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://
 	- [Start scrapy project](#start-scrapy-project)
  - [R](#r)
  - [SQL and SQLite](#sql-and-sqlite)
+ 	- [Repair corrupt database](#repair-corrupt-database)
+	- [Merge two SQLite databases](#merge-two-sqlite-databases)
+	- [Open new SQLiteBrowser window from terminal](#open-new-sqlitebrowser-window-from-terminal)
  - [Text editing and LaTeX](#text-editing-and-latex)
   - [Calculate the number of words in a Latex file](#calculate-the-number-of-words-in-a-latex-file)
 
@@ -218,7 +221,24 @@ http://stackoverflow.com/questions/80801/how-can-i-merge-many-sqlite-databases
 Leaving out duplicates:
 http://sqlite.1065341.n5.nabble.com/Merging-two-SQLites-leaving-out-duplicates-td46337.html
 
+****************************************************
+### Open new SQLiteBrowser window from terminal
+[SQLiteBrowser](http://sqlitebrowser.org) is well suited for viewing and editing database files compatible with SQLite.
 
+If you want to view several databases side by side, you have to open a new SQLiteBrowser window from terminal (it doesn't 
+seem to be possible to open a new window from _within_ SQLiteBrowser). To this end, go to the directory where your
+applications are stored (in Mac). Normally, this should be:
+
+```bash
+cd			# go to home directory
+cd ../../..		# go three levels up
+cd Applications		# go to Applications
+```
+
+Therefore, type the command to open a new SQLiteBrowser window:
+```bash
+open -n sqlitebrowser.app
+````
 
 ****************************************************
 ****************************************************
