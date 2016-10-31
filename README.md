@@ -140,7 +140,15 @@ in the terminal under the working environment of the project you want to commit 
 The file is found locally in the working environment of the project. Open it in a text editor to edit it and add files.
 
 #### Solve conflict using VIM editor
+See this Stackoverflow post: [http://stackoverflow.com/questions/5599122/problems-with-entering-git-commit-message-with-vim](http://stackoverflow.com/questions/5599122/problems-with-entering-git-commit-message-with-vim)
 
+If there is a conflict between your local version of the project and the version on Github, a window of the 
+VIM editor will open after you've tried to commit your local changes. In this case, you should proceed as follows:   
+- type `i` into the VIM editor, which opens the editing ("__i__nsert") mode   
+- type your merge message   
+- press `Esc` to be sure to have left insert mode
+- then type `:wq` followed by `Enter`, which writes the current file and then closes it.
+- your merge should now have been accepted.
 
 ****************************************************
 ****************************************************
