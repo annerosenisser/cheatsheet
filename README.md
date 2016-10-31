@@ -12,6 +12,11 @@ The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://
   - [Tmux sessions](#tmux-sessions)
   - [Bash profiles](#bash-profiles)
   - [Git](#git)
+  	-[Clone repository from GitHub to local machine](#clone-repository-from-github-to-local-machine)
+	-[Commit file from terminal](#commit-file-from-terminal)
+	-[global .gitignore file](#global-.gitignore-file)
+	-[local .gitignore file](#local-.gitignore-file)
+	-[Solve conflict using VIM editor](#solve-conflict-using-vim-editor)
  - [Python](#python)
  	- [Virtual environments](#virtual-environments)
 	- [Check which python packages are installed](#check-which-python-packages-are-installed)
@@ -133,6 +138,9 @@ enter
 in the terminal under the working environment of the project you want to commit to github. 
 
 The file is found locally in the working environment of the project. Open it in a text editor to edit it and add files.
+
+#### Solve conflict using VIM editor
+
 
 ****************************************************
 ****************************************************
