@@ -144,7 +144,7 @@ See this Stackoverflow post: [http://stackoverflow.com/questions/5599122/problem
 
 If there is a conflict between your local version of the project and the version on Github, a window of the 
 VIM editor will open after you've tried to commit your local changes. In this case, you should proceed as follows:   
-- type `i` into the VIM editor, which opens the editing ("__i__nsert") mode   
+- type `i` into the VIM editor, which opens the editing (**i**nsert") mode   
 - type your merge message   
 - press `Esc` to be sure to have left insert mode
 - then type `:wq` followed by `Enter`, which writes the current file and then closes it.
