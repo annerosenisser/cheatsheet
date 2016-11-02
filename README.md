@@ -1,7 +1,5 @@
-# Bash Cheat Sheet 
-Most important bash commands for researchers and data scientists. 
-
-The set-up of this cheat sheet is inspired by an existing [cheat sheet](https://github.com/tiimgreen/github-cheat-sheet) initated by [Tim Green](https://github.com/tiimgreen).
+# Cheat Sheet 
+Most important commands and approaches for managing processes, Git, Python, R, SQL/SQLite and LaTeX for researchers and data scientists. 
 
 ****************************************************
 ****************************************************
