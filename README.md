@@ -15,6 +15,7 @@ Most important commands and approaches for managing processes, Git, Python, R, S
 	- [global .gitignore file](#global-gitignore-file)   
 	- [local .gitignore file](#local-gitignore-file)   
 	- [Solve conflict using VIM editor](#solve-conflict-using-vim-editor)   
+	- [Push commits from terminal with two-factor authentification](#push-commits-from-terminal-with-two-factor-authentification)     
  - [Python](#python)
  	- [Virtual environments](#virtual-environments)
 	- [Check which python packages are installed](#check-which-python-packages-are-installed)
@@ -148,6 +149,11 @@ VIM editor will open after you've tried to commit your local changes. In this ca
 - then type `:wq` followed by `Enter`, which writes the current file and then closes it.
 - your merge should now have been accepted.
 
+#### Push commits from terminal with two-factor authentification
+See this helpful page on how to push commits from the terminal when using two-factor authentification on Github:   
+[https://gist.github.com/wikimatze/9790374](https://gist.github.com/wikimatze/9790374)
+
+**Important:** You need to use your personal access token, not your Github password to push commits from the terminal.
 ****************************************************
 ****************************************************
 ## Python
