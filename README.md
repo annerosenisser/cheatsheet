@@ -1,5 +1,5 @@
 # Cheat Sheet 
-Most important commands and approaches for managing processes, Git, Python, R, SQL/SQLite and LaTeX for researchers and data scientists. 
+Most important bash commands for managing processes, Git, Python, R, SQL/SQLite and LaTeX for researchers and data scientists. This cheat sheet only focusses on bash commands run from the terminal.
 
 ****************************************************
 ****************************************************
