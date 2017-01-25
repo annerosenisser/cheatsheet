@@ -110,7 +110,7 @@ For editing the .bash_profile. opens in a text editor. See [here](http://stackov
 * create new repository on GitHub
 * go to the directory on your local machine where the cloned repository should be saved.
 * type `git clone https://github.com/your-name/repository-name.git`
-* the repository should no appear in the local folder on your machine.
+* the repository should now appear in the local folder on your machine.
 
 #### Commit file from terminal
 * go to the directory of your repository inside the terminal
