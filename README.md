@@ -12,7 +12,7 @@ Most important bash commands for managing processes, Git, Python, R, SQL/SQLite 
   - [Git](#git)   
   	- [Clone repository from GitHub to local machine](#clone-repository-from-github-to-local-machine)   
 	- [Commit file from terminal](#commit-file-from-terminal)   
-	- [Create a new branch](#create-a-new-branch)
+	- [Managing branches](#managing-branches)
 	- [global .gitignore file](#global-gitignore-file)   
 	- [local .gitignore file](#local-gitignore-file)   
 	- [Solve conflict using VIM editor](#solve-conflict-using-vim-editor)   
@@ -123,7 +123,9 @@ To see the status of your repository: `git status`.
 
 See [this](http://shaun.boyblack.co.za/blog/2009/03/14/getting-started-with-git-on-mac-os-x/) useful blog.
 
-#### Create a new branch
+#### Managing branches
+Branches are very important when you collaboratively work on Github. 
+
 [This github page](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches) contains useful information on how to create a new branch and how to manage branches on github. 
 
 * go to the directory of your repository inside the terminal
@@ -134,9 +136,7 @@ See [this](http://shaun.boyblack.co.za/blog/2009/03/14/getting-started-with-git-
 * Add a new remote for your branch: `git remote add [name_of_your_remote]`. A remote (URL) is Git's fancy way of saying "the place where your code is stored." (see [here](https://help.github.com/articles/about-remote-repositories/))
 * Push changes from your commit into your branch (= into your remote): `git push [name_of_your_new_remote] [name_of_your_branch]`
 * Update your branch from the original (master) branch: `git fetch [name_of_your_remote]`
-
-
-Push changes from your commit into your branch by typing ``.
+* To merge changes between your branch and the original (master) branch, you should first switch to master branch in your terminal: `git checkout master`. Then simply type `git merge [name_of_your_branch]`.
 
 
 #### global .gitignore file
