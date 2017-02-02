@@ -12,6 +12,7 @@ Most important bash commands for managing processes, Git, Python, R, SQL/SQLite 
   - [Git](#git)   
   	- [Clone repository from GitHub to local machine](#clone-repository-from-github-to-local-machine)   
 	- [Commit file from terminal](#commit-file-from-terminal)   
+	- [Create a new branch](#create-a-new-branch)
 	- [global .gitignore file](#global-gitignore-file)   
 	- [local .gitignore file](#local-gitignore-file)   
 	- [Solve conflict using VIM editor](#solve-conflict-using-vim-editor)   
@@ -121,6 +122,22 @@ For editing the .bash_profile. opens in a text editor. See [here](http://stackov
 To see the status of your repository: `git status`.
 
 See [this](http://shaun.boyblack.co.za/blog/2009/03/14/getting-started-with-git-on-mac-os-x/) useful blog.
+
+#### Create a new branch
+[This github page](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches) contains useful information on how to create a new branch and how to manage branches on github. 
+
+* go to the directory of your repository inside the terminal
+* before creating a new branch, make sure all changes are pulled to your local repository
+* Create new branch by typing `git checkout -b [name_of_your_new_branch]` 
+* Push the new branch to github by typing `git push origin [name_of_your_new_branch]`
+* Check out which branches exist for this repository: `git branch`. (If there is only the master branch, it will return `* master`.)
+* Add a new remote for your branch: `git remote add [name_of_your_remote]`. A remote (URL) is Git's fancy way of saying "the place where your code is stored." (see [here](https://help.github.com/articles/about-remote-repositories/))
+* Push changes from your commit into your branch (= into your remote): `git push [name_of_your_new_remote] [name_of_your_branch]`
+* Update your branch from the original (master) branch: `git fetch [name_of_your_remote]`
+
+
+Push changes from your commit into your branch by typing ``.
+
 
 #### global .gitignore file
 See [here](http://stackoverflow.com/questions/7335420/global-git-ignore)
