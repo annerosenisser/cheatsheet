@@ -69,12 +69,12 @@ OR:
  * this signifies that the process will start to run Monday through Saturday at 6 minutes past midnight.
 
 For more information, see 
-* [http://www.everydaylinuxuser.com/2014/10/an-everyday-linux-user-guide-to.html](http://www.everydaylinuxuser.com/2014/10/an-everyday-linux-user-guide-to.html) and 
-* [http://stackoverflow.com/questions/12409101/scrapy-crawl-on-crontab-under-virtual-environment](http://stackoverflow.com/questions/12409101/scrapy-crawl-on-crontab-under-virtual-environment)
+* [http://www.everydaylinuxuser.com/2014/10/an-everyday-linux-user-guide-to.html](http://www.everydaylinuxuser.com/2014/10/an-everyday-linux-user-guide-to.html) and    
+* [http://stackoverflow.com/questions/12409101/scrapy-crawl-on-crontab-under-virtual-environment](http://stackoverflow.com/questions/12409101/scrapy-crawl-on-crontab-under-virtual-environment)    
 
 #### Kill an existing cronjob
 * enter `ps -e` in the terminal to see all existing processes.
-* termine which processid your process has.
+* determine which processid your process has.
 * enter `kill -9 <processid>`
 
 
@@ -123,18 +123,20 @@ Some more useful tmux commands (see also this [video](https://www.youtube.com/wa
 For editing the .bash_profile. opens in a text editor. See [here](http://stackoverflow.com/questions/30461201/how-do-i-edit-path-bash-profile-on-osx)
 
 ****************************************************
-### Git
-#### Clone repository from GitHub to local machine
-* create new repository on GitHub
-* go to the directory on your local machine where the cloned repository should be saved.
-* type `git clone https://github.com/your-name/repository-name.git`
-* the repository should now appear in the local folder on your machine.
 
-#### Commit file from terminal
-* go to the directory of your repository inside the terminal
-* type `git add .` . This recurses into sub-directories. Alternative: `git add` or `git commit -a`
-* `git commit -m “your commit message”`. Commit the changes.
-* `git push`. Push the changes.
+### Git
+
+#### Clone repository from GitHub to local machine    
+* create new repository on GitHub    
+* go to the directory on your local machine where the cloned repository should be saved.    
+* type `git clone https://github.com/your-name/repository-name.git`    
+* the repository should now appear in the local folder on your machine.    
+
+#### Commit file from terminal    
+* go to the directory of your repository inside the terminal    
+* type `git add .` . This recurses into sub-directories. Alternative: `git add` or `git commit -a`    
+* `git commit -m “your commit message”`. Commit the changes.    
+* `git push`. Push the changes.    
 
 To see the status of your repository: `git status`.
 
@@ -177,11 +179,11 @@ See this Stackoverflow post: [http://stackoverflow.com/questions/5599122/problem
 
 If there is a conflict between your local version of the project and the version on Github, a window of the 
 VIM editor will open after you've tried to commit your local changes. In this case, you should proceed as follows:   
-- type `i` into the VIM editor, which opens the editing (**i**nsert") mode   
-- type your merge message   
-- press `Esc` to be sure to have left insert mode
-- then type `:wq` followed by `Enter`, which writes the current file and then closes it.
-- your merge should now have been accepted.
+* type `i` into the VIM editor, which opens the editing (**i**nsert") mode     
+* type your merge message    
+* press `Esc` to be sure to have left insert mode    
+* then type `:wq` followed by `Enter`, which writes the current file and then closes it.    
+* your merge should now have been accepted.
 
 #### Push commits from terminal with two-factor authentification
 See this helpful page on how to push commits from the terminal when using two-factor authentification on Github:   
@@ -211,7 +213,9 @@ How to set up and manage virtual environments in Ubuntu:   [http://askubuntu.com
 
 #### Configure Pycharm to use a virtual environment
 
-`touch ~/.pycharmrc; open ~/.pycharmrc`  
+```bash 
+touch ~/.pycharmrc; open ~/.pycharmrc
+```    
 See [here](see http://stackoverflow.com/questions/22288569/how-do-i-activate-a-virtualenv-inside-pycharms-terminal).
 
 Then set the shell Preferences->Tools->Terminal->Shell path to  
@@ -239,10 +243,11 @@ in the terminal (in the directory where you want to start your project).
 ****************************************************
 
 ## R
+
 ### Open new window
-* Open new RStudio window from terminal (e.g. when one RStudio needs to run for an extended period of time):
- * enter `open -n -a "rstudio"` in terminal
-* How to add an RStudio project to Github: [https://www.r-bloggers.com/rstudio-and-github/](https://www.r-bloggers.com/rstudio-and-github/)
+* Open new RStudio window from terminal (e.g. when one RStudio needs to run for an extended period of time):    
+* enter `open -n -a "rstudio"` in terminal    
+* How to add an RStudio project to Github: [https://www.r-bloggers.com/rstudio-and-github/](https://www.r-bloggers.com/rstudio-and-github/)    
 
 ### Add R project to Github
 Add the following commands in shell after having created the project in Github:
@@ -286,8 +291,8 @@ cat <( sqlite3 corrupt.db .dump | grep "^ROLLBACK" -v ) <( echo "COMMIT;" ) | sq
 ### Merge two SQLite databases
 http://stackoverflow.com/questions/3689694/merge-sqlite-files-into-one-db-file-and-begin-commit-question    
 http://stackoverflow.com/questions/80801/how-can-i-merge-many-sqlite-databases    
-Leaving out duplicates:
-http://sqlite.1065341.n5.nabble.com/Merging-two-SQLites-leaving-out-duplicates-td46337.html
+Leaving out duplicates:    
+http://sqlite.1065341.n5.nabble.com/Merging-two-SQLites-leaving-out-duplicates-td46337.html    
 
 ****************************************************
 
@@ -317,6 +322,6 @@ open -n sqlitebrowser.app
 ****************************************************
 
 ### Calculate the number of words in a Latex file
-* change the working directory of your terminal to where the LaTeX TeX file is located.
-* enter `detex <document_name>.tex | wc -w -c -l` or just `detex <document_name>.tex | wc`
-* to calculate word count in pdf document: `pdftotext <document_name>.pdf - | wc -w`
+* change the working directory of your terminal to where the LaTeX TeX file is located.    
+* enter `detex <document_name>.tex | wc -w -c -l` or just `detex <document_name>.tex | wc`    
+* to calculate word count in pdf document: `pdftotext <document_name>.pdf - | wc -w`    
