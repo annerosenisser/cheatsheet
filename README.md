@@ -251,11 +251,12 @@ in the terminal (in the directory where you want to start your project).
 
 ### Add R project to Github
 Add the following commands in shell after having created the project in Github:
+
 ```bash
-git remote add origin https://github.com/your-name/repository-name.git  
-git config remote.origin.url git@github.com:your-name/repository-name.git  
-git pull origin master  
-git push origin master  
+git remote add origin https://github.com/your-name/repository-name.git    
+git config remote.origin.url git@github.com:your-name/repository-name.git     
+git pull origin master    
+git push origin master    
 ```
 
 ### Markdown and R
@@ -282,13 +283,14 @@ How to repair db database: see
 [stackoverflow](http://stackoverflow.com/questions/5274202/sqlite3-database-or-disk-is-full-the-database-disk-image-is-malformed)
 
 ```bash  
-echo '.dump'|sqlite3 corrupt.db|sqlite3 corrupt_fixed.db  
-cat <( sqlite3 corrupt.db .dump | grep "^ROLLBACK" -v ) <( echo "COMMIT;" ) | sqlite3 corrupt_fixed.db
+echo '.dump'|sqlite3 corrupt.db|sqlite3 corrupt_fixed.db    
+cat <( sqlite3 corrupt.db .dump | grep "^ROLLBACK" -v ) <( echo "COMMIT;" ) | sqlite3 corrupt_fixed.db    
 ```
 
 ****************************************************
 
 ### Merge two SQLite databases
+
 http://stackoverflow.com/questions/3689694/merge-sqlite-files-into-one-db-file-and-begin-commit-question    
 http://stackoverflow.com/questions/80801/how-can-i-merge-many-sqlite-databases    
 Leaving out duplicates:    
