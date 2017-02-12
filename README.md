@@ -22,6 +22,10 @@ Most important bash commands for managing processes, Git, Python, R, SQL/SQLite 
 	- [Check which python packages are installed](#check-which-python-packages-are-installed)
 	- [Start scrapy project](#start-scrapy-project)
  - [R](#r)
+ 	- [Open new window](#open-new-window)
+	- [Add R project to Github](#add-r-project-to-github)
+	- [Markdown and R](#markdown-and-r)
+	- [Options settings](#options-settings)
  - [SQL and SQLite](#sql-and-sqlite)
  	- [Repair corrupt database](#repair-corrupt-database)
 	- [Merge two SQLite databases](#merge-two-sqlite-databases)
@@ -216,18 +220,21 @@ in the terminal (in the directory where you want to start your project).
 ****************************************************
 ****************************************************
 ## R
+### Open new window
 * Open new RStudio window from terminal (e.g. when one RStudio needs to run for an extended period of time):
  * enter `open -n -a "rstudio"` in terminal
 * How to add an RStudio project to Github: [https://www.r-bloggers.com/rstudio-and-github/](https://www.r-bloggers.com/rstudio-and-github/)
 
+### Add R project to Github
 Add the following commands in shell after having created the project in Github:
 ```bash
 git remote add origin https://github.com/your-name/repository-name.git  
 git config remote.origin.url git@github.com:your-name/repository-name.git  
-git pull -u origin master  
-git push -u origin master  
+git pull origin master  
+git push origin master  
 ```
 
+### Markdown and R
 * Render/compile an R Markdown file from Terminal:  
 ```r
 render("yourfile.Rmd")
@@ -236,6 +243,8 @@ render("yourfile.Rmd")
 [This](http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html) resource on R Markdown is helpful.
 
 An R Markdown cheatsheet is available from RStudio [here](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf).
+
+### Options settings
 
 ****************************************************
 ****************************************************
