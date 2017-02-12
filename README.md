@@ -54,6 +54,7 @@ Most important bash commands for managing processes, Git, Python, R, SQL/SQLite 
 * type `kill -9 <PID>`    
 
 OR:    
+
 * `control + C` (twice if needed)    
 
 
@@ -65,7 +66,7 @@ OR:
 * If you want to run the cronjob on a server: enter the server
 * enter `crontab -e` in the terminal
 * enter `<minutes> <hours> <day of month> <month> <day of week>`
- * for example `6 0 * * 1-6 cd /home/annerose/Python/continuousscraper/ && python processcontrol.py new`
+ * for example `6 0 * * 1-6 cd /home/annerose/Python/continuousscraper/ && python processcontrol.py`
  * this signifies that the process will start to run Monday through Saturday at 6 minutes past midnight.
 
 For more information, see 
@@ -116,10 +117,16 @@ Some more useful tmux commands (see also this [video](https://www.youtube.com/wa
 ### Bash profiles
 
 #### Create bash profile
-`touch ~/.bash_profile; open ~/.bash_profile`
 
-`touch` creates the file, so no need to run this command when the file already exists.  
-`open ~/.bashrc` is also possible.
+```bash
+touch ~/.bash_profile; open ~/.bash_profile
+```
+
+`touch` creates the file, so no need to run this command when the file already exists. Alternative:
+
+```bash
+open ~/.bashrc
+```
 
 For editing the .bash_profile. opens in a text editor. See [here](http://stackoverflow.com/questions/30461201/how-do-i-edit-path-bash-profile-on-osx)
 
@@ -135,11 +142,11 @@ For editing the .bash_profile. opens in a text editor. See [here](http://stackov
 
 #### Commit file from terminal    
 * go to the directory of your repository inside the terminal    
-* type `git add .` . This recurses into sub-directories. Alternative: `git add` or `git commit -a`    
+* type `git add .`  This recurses into sub-directories. Alternative: `git add` or `git commit -a`    
 * `git commit -m “your commit message”`. Commit the changes.    
 * `git push`. Push the changes.    
 
-To see the status of your repository: `git status`.
+To see the status of your repository:  `git status`.
 
 See [this](http://shaun.boyblack.co.za/blog/2009/03/14/getting-started-with-git-on-mac-os-x/) useful blog.
 
@@ -163,15 +170,21 @@ Branches are very important when you collaboratively work on Github.
 See [here](http://stackoverflow.com/questions/7335420/global-git-ignore)
 
 Create a global .gitignore file (file types to be excluded from every git project):  
-`git config --global core.excludesfile ~/.gitignore_global`
+
+```bash 
+git config --global core.excludesfile ~/.gitignore_global
+```
 
 The file is found under Documents/Username (as a hidden file). Open it in a text editor to edit it and add files you don’t want to
 sync with git/GitHub.
 
 #### local .gitignore file
-enter  
-`touch .gitignore`  
-in the terminal under the working environment of the project you want to commit to github. 
+In the terminal, go to the working directory of the project you want to commit to github. 
+
+```bash 
+touch .gitignore
+```  
+
 
 The file is found locally in the working environment of the project. Open it in a text editor to edit it and add files.
 
@@ -237,7 +250,9 @@ pip freeze
 Start [scrapy](http://scrapy.org) project for webscraping: enter the following command
 in the terminal (in the directory where you want to start your project).
 
-`scrapy startproject name_of_project`
+```bash
+scrapy startproject name_of_project
+```
 
 
 ****************************************************
@@ -261,7 +276,8 @@ git push origin master
 ```
 
 ### Markdown and R
-* Render/compile an R Markdown file from Terminal:  
+Render/compile an R Markdown file from Terminal:  
+
 ```r
 render("yourfile.Rmd")
 ```
@@ -296,6 +312,7 @@ cat <( sqlite3 corrupt.db .dump | grep "^ROLLBACK" -v ) <( echo "COMMIT;" ) | sq
 * [http://stackoverflow.com/questions/80801/how-can-i-merge-many-sqlite-databases](http://stackoverflow.com/questions/80801/how-can-i-merge-many-sqlite-databases)
 
 Leaving out duplicates:    
+
 * [http://sqlite.1065341.n5.nabble.com/Merging-two-SQLites-leaving-out-duplicates-td46337.html](http://sqlite.1065341.n5.nabble.com/Merging-two-SQLites-leaving-out-duplicates-td46337.html)    
 
 ****************************************************
