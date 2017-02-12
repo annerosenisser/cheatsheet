@@ -69,6 +69,7 @@ OR:
  * this signifies that the process will start to run Monday through Saturday at 6 minutes past midnight.
 
 For more information, see 
+
 * [http://www.everydaylinuxuser.com/2014/10/an-everyday-linux-user-guide-to.html](http://www.everydaylinuxuser.com/2014/10/an-everyday-linux-user-guide-to.html) and    
 * [http://stackoverflow.com/questions/12409101/scrapy-crawl-on-crontab-under-virtual-environment](http://stackoverflow.com/questions/12409101/scrapy-crawl-on-crontab-under-virtual-environment)    
 
@@ -295,7 +296,7 @@ cat <( sqlite3 corrupt.db .dump | grep "^ROLLBACK" -v ) <( echo "COMMIT;" ) | sq
 * [http://stackoverflow.com/questions/80801/how-can-i-merge-many-sqlite-databases](http://stackoverflow.com/questions/80801/how-can-i-merge-many-sqlite-databases)
 
 Leaving out duplicates:    
-* [http://sqlite.1065341.n5.nabble.com/Merging-two-SQLites-leaving-out-duplicates-td46337.html}(http://sqlite.1065341.n5.nabble.com/Merging-two-SQLites-leaving-out-duplicates-td46337.html)    
+* [http://sqlite.1065341.n5.nabble.com/Merging-two-SQLites-leaving-out-duplicates-td46337.html](http://sqlite.1065341.n5.nabble.com/Merging-two-SQLites-leaving-out-duplicates-td46337.html)    
 
 ****************************************************
 
@@ -313,6 +314,7 @@ cd Applications		# go to Applications
 ```
 
 Thereafter, type the command to open a new SQLiteBrowser window:
+
 ```bash
 open -n sqlitebrowser.app
 ```
