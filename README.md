@@ -287,6 +287,15 @@ render("yourfile.Rmd")
 An R Markdown cheatsheet is available from RStudio [here](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf).
 
 ### Options settings
+Set options, even options that aren't defined by default. This can be useful for example for setting your consumer key, consumer secret etc. of your Twitter app:
+
+```r
+> option(<name of new option> = "")    
+> option(consumer_key = "xyz")    
+> getOption("consumer_key")    
+[1] "xyz"
+```
+
 
 ****************************************************
 ****************************************************
