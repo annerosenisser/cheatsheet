@@ -290,8 +290,8 @@ An R Markdown cheatsheet is available from RStudio [here](https://www.rstudio.co
 Set options, even options that aren't defined by default. This can be useful for example for setting your consumer key, consumer secret etc. of your Twitter app:
 
 ```r
-> option(<name of new option> = "")    
-> option(consumer_key = "xyz")    
+> options(<name of new option> = "")    
+> options(consumer_key = "xyz")    
 > getOption("consumer_key")    
 [1] "xyz"
 ```
