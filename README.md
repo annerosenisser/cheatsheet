@@ -27,7 +27,7 @@ Most important bash commands for managing processes, Git, Python, R, SQL/SQLite 
 	- [Add R project to Github](#add-r-project-to-github)    
 	- [Markdown and R](#markdown-and-r)    
 	- [Options settings](#options-settings)    
- - [SQL and SQLite](#sql-and-sqlite)    
+ - [SQL and SQLite](#sql-and-sqlite)      
  	- [Repair corrupt database](#repair-corrupt-database)    
 	- [Merge two SQLite databases](#merge-two-sqlite-databases)    
 	- [Open new SQLiteBrowser window from terminal](#open-new-sqlitebrowser-window-from-terminal)    
