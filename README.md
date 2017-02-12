@@ -8,9 +8,9 @@ Most important bash commands for managing processes, Git, Python, R, SQL/SQLite 
 
  - [Managing processes](#managing-processes)    
  	- [First-aid procedure for killing a running process](#first-aid-procedure-for-killing-a-running-process)    
-  	- [Cronjobs and Crontab](#cronjobs-and-crontab)    
- 	- [Tmux sessions](#tmux-sessions)    
-  	- [Bash profiles](#bash-profiles)    
+	- [Cronjobs and Crontab](#cronjobs-and-crontab)    
+	- [Tmux sessions](#tmux-sessions)    
+	- [Bash profiles](#bash-profiles)    
 	
  - [Git](#git)     
  	- [Clone repository from GitHub to local machine](#clone-repository-from-github-to-local-machine)   
@@ -22,7 +22,7 @@ Most important bash commands for managing processes, Git, Python, R, SQL/SQLite 
 	- [Push commits from terminal with two-factor authentification](#push-commits-from-terminal-with-two-factor-authentification) 
 	
  - [Python](#python)    
-	- [Virtual environments](#virtual-environments)    
+ 	- [Virtual environments](#virtual-environments)    
 	- [Check which python packages are installed](#check-which-python-packages-are-installed)    
 	- [Start scrapy project](#start-scrapy-project)    
 	
