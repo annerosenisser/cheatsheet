@@ -12,8 +12,8 @@ Most important bash commands for managing processes, Git, Python, R, SQL/SQLite 
  	- [Tmux sessions](#tmux-sessions)    
   	- [Bash profiles](#bash-profiles)    
 	
- - [Git](#git)       
-  	- [Clone repository from GitHub to local machine](#clone-repository-from-github-to-local-machine)   
+ - [Git](#git)     
+ 	- [Clone repository from GitHub to local machine](#clone-repository-from-github-to-local-machine)   
 	- [Commit file from terminal](#commit-file-from-terminal)   
 	- [Managing branches](#managing-branches)    
 	- [global .gitignore file](#global-gitignore-file)   
@@ -22,7 +22,7 @@ Most important bash commands for managing processes, Git, Python, R, SQL/SQLite 
 	- [Push commits from terminal with two-factor authentification](#push-commits-from-terminal-with-two-factor-authentification) 
 	
  - [Python](#python)    
- 	- [Virtual environments](#virtual-environments)    
+	- [Virtual environments](#virtual-environments)    
 	- [Check which python packages are installed](#check-which-python-packages-are-installed)    
 	- [Start scrapy project](#start-scrapy-project)    
 	
@@ -38,7 +38,7 @@ Most important bash commands for managing processes, Git, Python, R, SQL/SQLite 
 	- [Open new SQLiteBrowser window from terminal](#open-new-sqlitebrowser-window-from-terminal) 
 	
  - [Text editing and LaTeX](#text-editing-and-latex)    
-  	- [Calculate the number of words in a Latex file](#calculate-the-number-of-words-in-a-latex-file)    
+ 	- [Calculate the number of words in a Latex file](#calculate-the-number-of-words-in-a-latex-file)    
 
 ****************************************************
 ****************************************************
