@@ -36,20 +36,23 @@ Most important bash commands for managing processes, Git, Python, R, SQL/SQLite 
 
 ****************************************************
 ****************************************************
+
 ## Managing processes
 
 ****************************************************
+
 ### First-aid procedure for killing a running process
-* open new terminal window
-* type `ps + enter`
-* identify PID (processid) of the process
-* type `kill -9 <PID>`
+* open new terminal window    
+* type `ps + enter`    
+* identify PID (processid) of the process    
+* type `kill -9 <PID>`    
 
 OR:
-* `control + C` (twice if needed)
+* `control + C` (twice if needed)    
 
 
 ****************************************************
+
 ### Cronjobs and Crontab
 
 #### Schedule crontab task
@@ -70,6 +73,7 @@ For more information, see
 
 
 ****************************************************
+
 ### Tmux sessions
 Tmux allows to keep processes running after ending an ssh session. For more detailed explanation, see [here](http://askubuntu.com/questions/8653/how-to-keep-processes-running-after-ending-ssh-session).
 
@@ -101,7 +105,9 @@ Some more useful tmux commands (see also this [video](https://www.youtube.com/wa
 |`tmux attach` |attach all tmux sessions/ any tmux session |
 
 ****************************************************
+
 ### Bash profiles
+
 #### Create bash profile
 `touch ~/.bash_profile; open ~/.bash_profile`
 
@@ -176,11 +182,14 @@ See this helpful page on how to push commits from the terminal when using two-fa
 [https://gist.github.com/wikimatze/9790374](https://gist.github.com/wikimatze/9790374)
 
 **Important:** You need to use your personal access token, not your Github password to push commits from the terminal.
+
 ****************************************************
 ****************************************************
+
 ## Python
 
 ****************************************************
+
 ### Virtual environments
 
 #### Change virtual environment: 
@@ -204,6 +213,7 @@ Then set the shell Preferences->Tools->Terminal->Shell path to
 
 
 ****************************************************
+
 ### Check which python packages are installed
 
 ```bash
@@ -211,6 +221,7 @@ pip freeze
 ```
 
 ****************************************************
+
 ### Start scrapy project
 Start [scrapy](http://scrapy.org) project for webscraping: enter the following command
 in the terminal (in the directory where you want to start your project).
@@ -220,6 +231,7 @@ in the terminal (in the directory where you want to start your project).
 
 ****************************************************
 ****************************************************
+
 ## R
 ### Open new window
 * Open new RStudio window from terminal (e.g. when one RStudio needs to run for an extended period of time):
@@ -249,9 +261,11 @@ An R Markdown cheatsheet is available from RStudio [here](https://www.rstudio.co
 
 ****************************************************
 ****************************************************
+
 ## SQL and SQLite
 
 ****************************************************
+
 ### Repair corrupt database
 How to repair db database: see 
 [stackoverflow](http://stackoverflow.com/questions/5274202/sqlite3-database-or-disk-is-full-the-database-disk-image-is-malformed)
@@ -262,6 +276,7 @@ cat <( sqlite3 corrupt.db .dump | grep "^ROLLBACK" -v ) <( echo "COMMIT;" ) | sq
 ```
 
 ****************************************************
+
 ### Merge two SQLite databases
 http://stackoverflow.com/questions/3689694/merge-sqlite-files-into-one-db-file-and-begin-commit-question    
 http://stackoverflow.com/questions/80801/how-can-i-merge-many-sqlite-databases    
@@ -269,6 +284,7 @@ Leaving out duplicates:
 http://sqlite.1065341.n5.nabble.com/Merging-two-SQLites-leaving-out-duplicates-td46337.html
 
 ****************************************************
+
 ### Open new SQLiteBrowser window from terminal
 [SQLiteBrowser](http://sqlitebrowser.org) is well suited for viewing and editing database files compatible with SQLite.
 
@@ -285,13 +301,15 @@ cd Applications		# go to Applications
 Thereafter, type the command to open a new SQLiteBrowser window:
 ```bash
 open -n sqlitebrowser.app
-````
+```
 
 ****************************************************
 ****************************************************
+
 ## Text editing and LaTeX
 
 ****************************************************
+
 ### Calculate the number of words in a Latex file
 * change the working directory of your terminal to where the LaTeX TeX file is located.
 * enter `detex <document_name>.tex | wc -w -c -l` or just `detex <document_name>.tex | wc`
