@@ -6,11 +6,11 @@ Most important bash commands for managing processes, Git, Python, R, SQL/SQLite 
 
 ## Table of Contents
  - [Managing processes](#managing-processes)    
-  - [First-aid procedure for killing a running process](#first-aid-procedure-for-killing-a-running-process)    
-  - [Cronjobs and Crontab](#cronjobs-and-crontab)    
-  - [Tmux sessions](#tmux-sessions)    
-  - [Bash profiles](#bash-profiles)    
-  - [Git](#git)       
+ 	- [First-aid procedure for killing a running process](#first-aid-procedure-for-killing-a-running-process)    
+  	- [Cronjobs and Crontab](#cronjobs-and-crontab)    
+ 	- [Tmux sessions](#tmux-sessions)    
+  	- [Bash profiles](#bash-profiles)    
+ - [Git](#git)       
   	- [Clone repository from GitHub to local machine](#clone-repository-from-github-to-local-machine)   
 	- [Commit file from terminal](#commit-file-from-terminal)   
 	- [Managing branches](#managing-branches)    
@@ -32,7 +32,7 @@ Most important bash commands for managing processes, Git, Python, R, SQL/SQLite 
 	- [Merge two SQLite databases](#merge-two-sqlite-databases)    
 	- [Open new SQLiteBrowser window from terminal](#open-new-sqlitebrowser-window-from-terminal)    
  - [Text editing and LaTeX](#text-editing-and-latex)    
-  - [Calculate the number of words in a Latex file](#calculate-the-number-of-words-in-a-latex-file)    
+  	- [Calculate the number of words in a Latex file](#calculate-the-number-of-words-in-a-latex-file)    
 
 ****************************************************
 ****************************************************
@@ -47,7 +47,7 @@ Most important bash commands for managing processes, Git, Python, R, SQL/SQLite 
 * identify PID (processid) of the process    
 * type `kill -9 <PID>`    
 
-OR:
+OR:    
 * `control + C` (twice if needed)    
 
 
