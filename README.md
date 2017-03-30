@@ -362,4 +362,5 @@ open -n sqlitebrowser.app
 	Enter `texcount -1 <document_name>.tex`    
 	There are thousands of options for `texcount`    
 	For example, for including the bibliography in the word count, use `texcount -1 -incbib <document_name>.tex`    
-	To include several documents in the word count (e.g. main paper and appendix), just add the different documents behind one another: `texcount -1 -incbib <main_document>.tex <appendix>.tex`
+	To include several documents in the word count (e.g. main paper and appendix), just add the different documents behind one another: `texcount -1 -incbib <main_document>.tex <appendix>.tex`    
+	For more information on `texcount`, see [this website](http://app.uio.no/ifi/texcount/faq.html)
