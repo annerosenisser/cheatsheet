@@ -353,6 +353,13 @@ open -n sqlitebrowser.app
 ****************************************************
 
 ### Calculate the number of words in a Latex file
-* change the working directory of your terminal to where the LaTeX TeX file is located.    
-* enter `detex <document_name>.tex | wc -w -c -l` or just `detex <document_name>.tex | wc`    
-* to calculate word count in pdf document: `pdftotext <document_name>.pdf - | wc -w`    
+* Change the working directory of your terminal to where the LaTeX TeX file is located.    
+* I use one of the two options: (1) `detex` or (2) `texcount`    
+	* `detex`:    
+	Enter `detex <document_name>.tex | wc -w -c -l` or just `detex <document_name>.tex | wc`    
+	To calculate word count in pdf document: `pdftotext <document_name>.pdf - | wc -w`    
+	* `texcount`:    
+	Enter `texcount -1 <document_name>.tex`    
+	There are thousands of options for `texcount`    
+	For example, for including the bibliography in the word count, use `texcount -1 -incbib <document_name>.tex`    
+	To include several documents in the word count (e.g. main paper and appendix), just add the different documents behind one another: `texcount -1 -incbib <main_document>.tex <appendix>.tex`
