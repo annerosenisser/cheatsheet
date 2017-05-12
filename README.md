@@ -18,7 +18,7 @@ Most important bash commands for managing processes, Git, Python, R, SQL/SQLite 
 	- [Managing branches](#managing-branches)    
 	- [global .gitignore file](#global-gitignore-file)   
 	- [local .gitignore file](#local-gitignore-file)   
-	- [How to prevent conflicts in a collaborative Github project](#How-to-prevent-conflicts-in-a-collaborative-Github-project)
+	- [How to prevent conflicts in a collaborative Github project](#how-to-prevent-conflicts-in-a-collaborative-github-project)
 	- [Solve conflict using VIM editor](#solve-conflict-using-vim-editor)   
 	- [Push commits from terminal with two-factor authentification](#push-commits-from-terminal-with-two-factor-authentification) 
 	
