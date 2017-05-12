@@ -18,6 +18,7 @@ Most important bash commands for managing processes, Git, Python, R, SQL/SQLite 
 	- [Managing branches](#managing-branches)    
 	- [global .gitignore file](#global-gitignore-file)   
 	- [local .gitignore file](#local-gitignore-file)   
+	- [How to prevent conflicts in a collaborative Github project](#How-to-prevent-conflicts-in-a-collaborative-Github-project)
 	- [Solve conflict using VIM editor](#solve-conflict-using-vim-editor)   
 	- [Push commits from terminal with two-factor authentification](#push-commits-from-terminal-with-two-factor-authentification) 
 	
@@ -187,6 +188,20 @@ touch .gitignore
 
 
 The file is found locally in the working environment of the project. Open it in a text editor to edit it and add files.
+
+#### How to prevent conflicts in a collaborative Github project
+The following procedure should help you considerably to prevent conflicts in collaborative Github and Git project.
+
+Before you start working: **pull**
+
+Once you've made any changes to the projects:    
+1. **Commit**    
+2. **Pull**    
+3. If you get an error message, **clean** the file, solve conflicts    
+4. **Push**    
+
+To summarize: **pull**, **commit**, **pull**, **clean**, **push**
+
 
 #### Solve conflict using VIM editor
 See this Stackoverflow post: [http://stackoverflow.com/questions/5599122/problems-with-entering-git-commit-message-with-vim](http://stackoverflow.com/questions/5599122/problems-with-entering-git-commit-message-with-vim)
