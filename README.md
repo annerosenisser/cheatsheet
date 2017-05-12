@@ -191,8 +191,10 @@ The file is found locally in the working environment of the project. Open it in 
 
 #### How to prevent conflicts in a collaborative Github project
 The following procedure should help you considerably to prevent conflicts in collaborative Github and Git project.    
+
 Before you start working: **pull**    
-Once you've made any changes to the projects:    
+
+Once you've made any changes to the project:    
 1. **Commit**    
 2. **Pull**    
 3. If you get an error message, **clean** the file, solve conflicts    
