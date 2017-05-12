@@ -190,10 +190,8 @@ touch .gitignore
 The file is found locally in the working environment of the project. Open it in a text editor to edit it and add files.
 
 #### How to prevent conflicts in a collaborative Github project
-The following procedure should help you considerably to prevent conflicts in collaborative Github and Git project.
-
-Before you start working: **pull**
-
+The following procedure should help you considerably to prevent conflicts in collaborative Github and Git project.    
+Before you start working: **pull**    
 Once you've made any changes to the projects:    
 1. **Commit**    
 2. **Pull**    
